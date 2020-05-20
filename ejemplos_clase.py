@@ -12,7 +12,7 @@ Programa creado para mostrar ejemplos prácticos de los visto durante la clase
 
 __author__ = "Inove Coding School"
 __email__ = "alumnos@inove.com.ar"
-__version__ = "1.1"
+__version__ = "1.12"
 
 def numbers():
     # Ejemplos varialbles numéricas
