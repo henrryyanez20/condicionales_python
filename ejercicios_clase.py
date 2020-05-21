@@ -51,7 +51,7 @@ def ej1():
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
     if numero_1 < 10 or numero_2 > -2:
-        print("Numer1 es menor a 10 o numero 2 es mayor a -2")
+        print("Numer1 es menor a 10 o numero 2 es mayor a -2 ")
 
 def ej2():
     # Ejemplos variables de texto
