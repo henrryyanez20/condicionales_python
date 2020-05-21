@@ -26,17 +26,32 @@ def ej1():
     
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
+    if numero_1 < numero_2:
+        print("Numero1 con valor {} es menor al numero2 con valor {}".format(numero_1,numero_2))
+    else:
+        print("Numero2 con valor {} es menor al numero1 con valor {}".format(numero_2,numero_1))
 
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
 
 
+    if numero_1 > 0:
+        print('{} es positivo'.format(numero_1))
+    elif numero_1 < 0:
+        print('{} es negativo'.format(numero_1))
+    else:
+        print('{} es 0'.format(numero_1))
+
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
+    if numero_1 > 0 and numero_1 < 100:
+        print("numero1 está entre 0 y 100")
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    if numero_1 < 10 or numero_2 > -2:
+        print("Numer1 es menor a 10 o numero 2 es mayor a -2")
 
 def ej2():
     # Ejemplos variables de texto
@@ -124,7 +139,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()
