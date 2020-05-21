@@ -65,10 +65,18 @@ def ej2():
 
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
+    if texto_1 < texto_2:
+        print("texto_1: {} es MENOR que texto_2: {}".format(texto_1, texto_2))
+    else:
+        print("texto_1: {} es MAYOR que texto_2: {}".format(texto_1, texto_2))
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    if len(texto_1) < len(texto_2):
+        print("texto1 tiene {} letras y es MENOR que texto2 ya que este tiene {} letras".format(texto_1, texto_2))
+    else:
+        print("texto1 tiene {} letras y es MAYOR que texto2 ya que este tiene {} letras".format(texto_1, texto_2))
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
@@ -76,11 +84,26 @@ def ej2():
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
+    if texto_1[0] > texto_2[0]:
+        print("La primera letra del texto1: {}, es MAYOR que la primera letra del texto2: {}.".format(texto_1, texto_2))
+    else:
+        print("La primera letra del texto1: {}, es MENOR que la primera letra del texto2: {}.".format(texto_1, texto_2))
+
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
 
+    if copia_texto_1 == texto_1:
+        print("Ambas palabras son iguales: {} con {}".format(copia_texto_1, texto_1))
+    else:
+        print("Las palabras son distintas")
+
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
+
+    if copia_texto_1 != texto_2:
+        print("Las palabras son distintas")
+    else:
+        print("Son Distintas")
 
 def ej3():
     # Ejercicios de práctica numérica
@@ -139,8 +162,8 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
 
