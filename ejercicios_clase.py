@@ -135,7 +135,7 @@ def ej3():
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
-    puntaje = 2
+    puntaje = 70
 
     # Si el puntaje es mayor igual a 90 --> imprimir A
     # Si el puntaje es mayor igual a 80 --> imprimir B
@@ -162,16 +162,26 @@ def ej3():
 def ej4():
     # Ejemplos variables de texto
 
-    texto_1 = '5'
+    texto_1 = '9'
     texto_2 = '7'
 
     # Verifique cual cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
 
+    if texto_1 < texto_2:
+        print("Texto 2 es MAYOR")
+    else:
+        print("Texto 1 es MAYOR")
+
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+
+    if int(texto_1) < int(texto_2):
+        print("Texto 2 es MAYOR")
+    else:
+        print("Texto 1 es MAYOR")
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -182,9 +192,11 @@ def ej4():
     # responder.
     # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
 
+    #YO CONSIDERA QUE POR LAS POSICIONES ALFABETICAS EL NUMERO EN TEXTO SE POSICIONA SEGÚN COMO SE MANEJA ALFABETICAMENTE.
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
     #ej2()
-    ej3()
-    #ej4()
+    #ej3()
+    ej4()
