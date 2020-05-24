@@ -109,8 +109,8 @@ def ej3():
     # Ejercicios de práctica numérica
 
     # Condicionales anidados
-    numero_1 = 7
-    numero_2 = -2
+    numero_1 = 1
+    numero_2 = 9
 
     # Verifique si el numero_1 es mayor a 5
     #   --> En caso afirmativo, verifique si el numero_2
@@ -121,6 +121,17 @@ def ej3():
     #      verifique si el numero_2 es mayor a 5
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
+
+    if numero_1 > 5:
+        if numero_2 > 0:
+            print("Resp=1")
+        else:
+            print("Resp=2")
+    else:
+        if numero_2>5:
+            print("Resp=3")
+        else:
+            print("Resp=4")
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
@@ -163,7 +174,6 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
-
