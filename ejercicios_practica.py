@@ -83,6 +83,26 @@ def ej3():
     
     '''
 
+    numero_1 = int(input('Ingrese el primer número:\n'))
+    numero_2 = int(input('Ingrese el segundo número:\n'))
+    operacion = input('''Ingrese el simbola de la operacion a realizar :\n
+    - Suma (+)
+    - Resta (-)
+    - Multiplicación (*)
+    - División (/)
+    - Exponente/Potencia (**) \n''')
+
+    if operacion == "+":
+      print("La SUMA de {} + {} es : ".format(numero_1,numero_2), numero_1+numero_2)
+    elif operacion == "-":
+      print("La RESTA de {} - {} es : ".format(numero_1,numero_2), numero_1-numero_2)
+    elif operacion == "*":
+      print("La MULTIPLICACION de {} * {} es : ".format(numero_1,numero_2), numero_1*numero_2)
+    elif operacion == "/":
+      print("La DIVISION de {} / {} es : ".format(numero_1,numero_2), numero_1/numero_2)
+    else:
+      print("La POTENCIA de {} elevado a {} es : ".format(numero_1,numero_2), numero_1**numero_2)
+
 def ej4():
     # Ejercicios de práctica con cadenas
     
@@ -112,7 +132,7 @@ def ej5():
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
     #ej5()
