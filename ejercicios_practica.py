@@ -115,7 +115,29 @@ def ej4():
     e imprimir en pantalla de la mayor a la menor
     Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
     e imprimir en pantalla de la mayor a la menor
-  '''
+    '''
+    palabra_1 = str(input('Ingrese la primera palabra:\n'))
+    palabra_2 = str(input('Ingrese la segunda palabra:\n'))
+    palabra_3 = str(input('Ingrese la tercera palabra:\n'))
+
+    print('''
+    1 - Ordenar por orden alfabético (usando el operador ">")
+    2 - Ordenar por cantidad de letras (longitud de la palabra) \n''')
+
+    opcion = int(input('Ingrese la opción 1 o 2 según su necesidad:\n'))
+
+    if opcion == 1:
+      if (palabra_1 < palabra_2 < palabra_3):
+        print(palabra_1,palabra_2,palabra_3)
+      elif (palabra_1 > palabra_2 > palabra_3):
+        print(palabra_3,palabra_2,palabra_1)
+
+    else:
+      a = len(palabra_1)
+      b = len(palabra_2)
+      c = len(palabra_3)
+
+      #TENGO DUDAS COMO HACERLO CON TRES PALABRAS
 
 def ej5():
     # Ejercicios de práctica con números
@@ -133,6 +155,6 @@ if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
-    ej3()
-    #ej4()
+    #ej3()
+    ej4()
     #ej5()
