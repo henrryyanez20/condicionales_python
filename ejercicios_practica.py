@@ -21,8 +21,19 @@ def ej1():
     Realice un programa que solicite por consola 2 números
     Calcule la diferencia entre ellos e informe por pantalla
     si el resultado es positivo, negativo o cero.
-        
     '''
+
+    numero_1 = int(input('Ingrese el primer número:\n'))
+    numero_2 = int(input('Ingrese el segundo número:\n'))
+    diferencia = numero_1 - numero_2
+
+    if diferencia < 0:
+        print("Resultado NEGATIVO")
+    elif diferencia == 0:
+        print("Resultado igual a CERO")
+    else:
+        print("Resultado POSITIVO")        
+
 
 def ej2():
 # Ejercicios de práctica con números
@@ -47,11 +58,9 @@ def ej3():
     - Multiplicación (*)
     - División (/)
     - Exponente/Potencia (**)
-
     Se debe efectuar el cálculo correcto según la operación ingresada por consola
     Imprimir en pantalla la operación realizada y el resultado
     
-
     '''
 
 def ej4():
@@ -62,13 +71,10 @@ def ej4():
     Luego el programa debe consultar al usuario como quiere ordenar las palabras
     1 - Ordenar por orden alfabético (usando el operador ">")
     2 - Ordenar por cantidad de letras (longitud de la palabra)
-
     Si se ingresa "1" por consola se deben ordenar las 3 palabras por orden alfabético
     e imprimir en pantalla de la mayor a la menor
-
     Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
     e imprimir en pantalla de la mayor a la menor
-
   '''
 
 def ej5():
@@ -80,9 +86,7 @@ def ej5():
     1 - ¿Cuáles de ellas es la máxima temperatura ingresada?
     2 - ¿Cuáles de ellas es la mínima temperatura ingresada?
     3 - ¿Cuál es el promedio de las temperaturas ingresadas?
-
     En cada caso imprimir en pantalla el resultado  
-
     '''
 
 if __name__ == '__main__':
