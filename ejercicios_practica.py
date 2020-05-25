@@ -45,6 +45,26 @@ def ej2():
     Para cada caso imprimir el resultado en pantalla.
     
   '''
+  numero_1 = int(input('Ingrese el primer número:\n'))
+    
+  if (numero_1 % 2) == 0:
+    print("Numero 1 es PAR")
+  else:
+    print("Numero 1 es IMPAR")
+
+  numero_2 = int(input('Ingrese el segundo número:\n'))
+
+  if (numero_2 % 2) == 0:
+    print("Numero 2 es PAR")
+  else:
+    print("Numero 2 es IMPAR")
+
+  numero_3 = int(input('Ingrese el tercer número:\n'))
+
+  if (numero_3 % 2) == 0:
+    print("Numero 3 es PAR")
+  else:
+    print("Numero 3 es IMPAR")
 
 def ej3():
     # Ejercicios de práctica con números
@@ -91,8 +111,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
     #ej5()
